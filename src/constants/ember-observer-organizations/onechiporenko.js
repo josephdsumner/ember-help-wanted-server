@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'onechiporenko',
   repositoryNames: [
@@ -8,4 +9,5 @@ const githubOrganization = new GithubOrganization({
     'ember-paper-modals-manager',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

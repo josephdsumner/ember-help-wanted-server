@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'yahoo',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'navi/tree/master/packages/search',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

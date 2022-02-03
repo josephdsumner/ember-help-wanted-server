@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'rwjblue',
   repositoryNames: [
@@ -12,4 +13,5 @@ const githubOrganization = new GithubOrganization({
     'pretender-query-param-handler',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

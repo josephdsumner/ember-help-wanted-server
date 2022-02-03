@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ember-a11y',
   repositoryNames: [
@@ -8,4 +9,5 @@ const githubOrganization = new GithubOrganization({
     'ember-select-light',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

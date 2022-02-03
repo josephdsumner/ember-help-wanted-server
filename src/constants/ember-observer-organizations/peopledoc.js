@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'peopledoc',
   repositoryNames: [
@@ -9,4 +10,5 @@ const githubOrganization = new GithubOrganization({
     'ember-slugify',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

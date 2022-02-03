@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'lblod',
   repositoryNames: [
@@ -11,4 +12,5 @@ const githubOrganization = new GithubOrganization({
     'ember-rdfa-editor-template-variable-plugin',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

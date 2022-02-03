@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'yapplabs',
   repositoryNames: [
@@ -14,4 +15,5 @@ const githubOrganization = new GithubOrganization({
     'ember-wormhole',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

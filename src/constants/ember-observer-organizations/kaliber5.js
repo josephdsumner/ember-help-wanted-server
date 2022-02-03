@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'kaliber5',
   repositoryNames: [
@@ -23,4 +24,5 @@ const githubOrganization = new GithubOrganization({
     'select-sass-theme',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

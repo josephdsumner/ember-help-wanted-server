@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'unionups',
   repositoryNames: [
@@ -6,4 +7,5 @@ const githubOrganization = new GithubOrganization({
     'ember-cli-deploy-lightning-cloudinary-pack',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

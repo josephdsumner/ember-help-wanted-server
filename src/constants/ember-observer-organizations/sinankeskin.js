@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'sinankeskin',
   repositoryNames: [
@@ -21,4 +22,5 @@ const githubOrganization = new GithubOrganization({
     'ember-swiper7',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

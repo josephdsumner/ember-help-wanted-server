@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'gaurav0',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'ember-glue/packages/@ember-glue/toggle',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

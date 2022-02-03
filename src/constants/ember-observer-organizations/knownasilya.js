@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'knownasilya',
   repositoryNames: [
@@ -12,4 +13,5 @@ const githubOrganization = new GithubOrganization({
     'pagination-pager',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

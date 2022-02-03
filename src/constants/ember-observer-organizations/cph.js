@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'cph',
   repositoryNames: [
@@ -6,4 +7,5 @@ const githubOrganization = new GithubOrganization({
     'ember-search-with-modifiers',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

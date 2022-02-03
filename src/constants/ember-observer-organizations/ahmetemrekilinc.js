@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ahmetemrekilinc',
   repositoryNames: [
@@ -10,4 +11,5 @@ const githubOrganization = new GithubOrganization({
     'ember-time-enabled-pikaday',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

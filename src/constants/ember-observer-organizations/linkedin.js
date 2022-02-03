@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'linkedin',
   repositoryNames: [
@@ -10,4 +11,5 @@ const githubOrganization = new GithubOrganization({
     'tracked-queue',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

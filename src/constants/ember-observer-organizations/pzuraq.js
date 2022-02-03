@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'pzuraq',
   repositoryNames: [
@@ -17,4 +18,5 @@ const githubOrganization = new GithubOrganization({
     'tracked-toolbox',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

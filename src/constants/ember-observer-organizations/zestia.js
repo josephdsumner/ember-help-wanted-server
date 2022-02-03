@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'zestia',
   repositoryNames: [
@@ -16,4 +17,5 @@ const githubOrganization = new GithubOrganization({
     'ember-wrap-urls',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

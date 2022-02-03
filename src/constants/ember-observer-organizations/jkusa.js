@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'jkusa',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'ember-cli-sass-less',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

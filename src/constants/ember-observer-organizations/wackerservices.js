@@ -1,6 +1,8 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'wackerservices',
-  repositoryNames: ['EmberCustomLink', 'SitemapAutogenerator'],
+  repositoryNames: ['embercustomlink', 'sitemapautogenerator'],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

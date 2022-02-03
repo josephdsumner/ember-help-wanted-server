@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'elwayman02',
   repositoryNames: [
@@ -9,4 +10,5 @@ const githubOrganization = new GithubOrganization({
     'empress-blog-vintage-news-template',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

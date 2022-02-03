@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ember-polyfills',
   repositoryNames: [
@@ -11,4 +12,5 @@ const githubOrganization = new GithubOrganization({
     'ember-tracked-storage-polyfill',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

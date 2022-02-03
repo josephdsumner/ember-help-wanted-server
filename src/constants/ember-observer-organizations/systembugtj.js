@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'systembugtj',
   repositoryNames: [
@@ -10,4 +11,5 @@ const githubOrganization = new GithubOrganization({
     'ember-tree-view',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

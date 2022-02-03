@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'josemarluedke',
   repositoryNames: [
@@ -9,4 +10,5 @@ const githubOrganization = new GithubOrganization({
     'glimmer-apollo',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

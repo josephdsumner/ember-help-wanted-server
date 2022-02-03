@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'miguelcobain',
   repositoryNames: [
@@ -15,4 +16,5 @@ const githubOrganization = new GithubOrganization({
     'ember-yeti-table',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

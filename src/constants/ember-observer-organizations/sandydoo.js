@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'sandydoo',
   repositoryNames: [
@@ -8,4 +9,5 @@ const githubOrganization = new GithubOrganization({
     'tracked-maps-and-sets',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'duizendnegen',
   repositoryNames: [
@@ -6,4 +7,5 @@ const githubOrganization = new GithubOrganization({
     'ember-cli-deploy-azure-tables',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

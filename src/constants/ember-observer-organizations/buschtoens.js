@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'buschtoens',
   repositoryNames: [
@@ -15,4 +16,5 @@ const githubOrganization = new GithubOrganization({
     'ember-service-helper',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

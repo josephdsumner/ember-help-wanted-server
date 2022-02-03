@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ember-cli-deploy',
   repositoryNames: [
@@ -11,4 +12,5 @@ const githubOrganization = new GithubOrganization({
     'ember-cli-deploy-s3-index',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

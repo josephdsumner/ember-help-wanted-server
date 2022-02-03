@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'emberjs',
   repositoryNames: [
@@ -22,4 +23,5 @@ const githubOrganization = new GithubOrganization({
     'ember-test-waiters',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'nypublicradio',
   repositoryNames: [
@@ -8,4 +9,5 @@ const githubOrganization = new GithubOrganization({
     'nypr-django-for-ember',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

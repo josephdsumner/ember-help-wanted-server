@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'empress',
   repositoryNames: [
@@ -14,4 +15,5 @@ const githubOrganization = new GithubOrganization({
     'guidemaker-default-template',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

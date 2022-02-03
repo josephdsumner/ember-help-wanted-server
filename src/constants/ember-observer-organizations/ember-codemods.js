@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ember-codemods',
   repositoryNames: [
@@ -6,4 +7,5 @@ const githubOrganization = new GithubOrganization({
     'ember-tracked-properties-codemod',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'adopted-ember-addons',
   repositoryNames: [
@@ -19,4 +20,5 @@ const githubOrganization = new GithubOrganization({
     'ember-stripe-elements',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

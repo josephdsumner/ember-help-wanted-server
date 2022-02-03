@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'nibynic',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'ember-template-bread-crumbs',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

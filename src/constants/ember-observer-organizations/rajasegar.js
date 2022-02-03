@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'rajasegar',
   repositoryNames: [
@@ -23,4 +24,5 @@ const githubOrganization = new GithubOrganization({
     'ember-x-tabs',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'mfeckie',
   repositoryNames: [
@@ -6,4 +7,5 @@ const githubOrganization = new GithubOrganization({
     'ember-typescript-addon-blueprint',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

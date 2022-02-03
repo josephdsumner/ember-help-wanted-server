@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'machty',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'ember-maybe-import-regenerator',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

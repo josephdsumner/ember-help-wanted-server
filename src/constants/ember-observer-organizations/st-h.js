@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'st-h',
   repositoryNames: [
@@ -7,4 +8,5 @@ const githubOrganization = new GithubOrganization({
     'ember-file-drop-zone',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

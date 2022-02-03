@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'simplabs',
   repositoryNames: [
@@ -13,4 +14,5 @@ const githubOrganization = new GithubOrganization({
     'qunit-dom',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

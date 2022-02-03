@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'lifeart',
   repositoryNames: [
@@ -14,4 +15,5 @@ const githubOrganization = new GithubOrganization({
     'glimmer-composition-api',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

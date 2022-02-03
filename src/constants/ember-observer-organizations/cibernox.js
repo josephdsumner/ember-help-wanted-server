@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'cibernox',
   repositoryNames: [
@@ -15,4 +16,5 @@ const githubOrganization = new GithubOrganization({
     'ember-text-measurer',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'concordnow',
   repositoryNames: [
@@ -11,4 +12,5 @@ const githubOrganization = new GithubOrganization({
     'tinymce-ember',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

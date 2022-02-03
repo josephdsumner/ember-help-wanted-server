@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'patricklx',
   repositoryNames: [
@@ -9,4 +10,5 @@ const githubOrganization = new GithubOrganization({
     'ember-template-helper-imports',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();

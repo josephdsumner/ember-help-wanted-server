@@ -1,4 +1,5 @@
 const GithubOrganization = require('../../classes/github-organization');
+
 const githubOrganization = new GithubOrganization({
   organizationName: 'ef4',
   repositoryNames: [
@@ -13,4 +14,5 @@ const githubOrganization = new GithubOrganization({
     'prember',
   ],
 });
+
 module.exports = githubOrganization.getReposWithSupportedLabels();
