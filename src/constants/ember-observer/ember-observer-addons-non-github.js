@@ -1,0 +1,12 @@
+[
+  'https://gitlab.com/kb/kb-base-ember-addons',
+  'https://gitlab.com/luxferresum/ember-embrace-components',
+  'https://gitlab.com/luxferresum/ember-lux',
+  'https://gitlab.com/michal-bryxi/open-source/ember-intl-changeset-validations',
+  'https://gitlab.com/oliverlj/ember-bootstrap-postcss',
+  'https://bitbucket.org/anamo/ember-inline-svg',
+  'https://bitbucket.org/anamo/market-data-model-for-ember-data',
+  'https://bitbucket.org/linformatics/ember-fw',
+  'https://bitbucket.pharbers.com/scm/page/basic-components',
+  'https://bitbucket.pharbers.com/scm/tmis/bp-components',
+];
